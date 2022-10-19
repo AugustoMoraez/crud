@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.form{
+    max-width: 400px;
+    border: 1px solid rgb(210, 210, 210);
+    background-color: #eee;
+    padding: 40px 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.form-item input{
+    outline: none;
+}
+.button-blue{
+    background-color: rgb(61, 153, 251);
+    padding: 5px 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.button-blue:hover{
+    background-color: rgb(85, 161, 243);
+}
+.button-blue{
+    background-color: rgb(61, 153, 251);
+    padding: 5px 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.button-blue:hover{
+    background-color: rgb(85, 161, 243);
+}
+.buttonEdit{
+    background-color: rgb(61, 153, 251);
+    padding: 1px 1px;
+    margin-top: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+.buttonEdit:hover{
+    background-color: rgb(85, 161, 243);
+}
+.buttonDelet{
+    background-color: rgb(228, 64, 64);
+    padding: 1px 1px;
+    margin-top: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+.buttonDelet:hover{
+    background-color: rgb(239, 94, 94);
+}

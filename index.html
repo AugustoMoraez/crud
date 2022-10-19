@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <main>
+        <!-- Modal -->
+        <div class="modal" tabindex="-1" id="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Editar informações</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+
+                <div class="modal-body">
+                    <div class="form-item">
+                        <label for="nameE">Funcionario</label>
+                        <input type="text" name="nameE" id="nameE" placeholder="Ex: João Silva" maxlength="20" minlength="2"
+                            required>
+                    </div>
+                    <div class="form-item">
+                        <label for="wageE">Salario</label>
+                        <input type="number" name="wageE" id="wageE" placeholder="Ex: 1000,00" required>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" id="save" class="btn btn-primary" data-bs-dismiss="modal">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--MODAL-->
+        <div class="container">
+            <form class="form" id="form">
+                <h1>Cadastre</h1>
+                <div class="form-item">
+                    <label for="name">Funcionario</label>
+                    <input type="text" name="name" id="name" placeholder="Ex: João Silva" maxlength="20" minlength="2"
+                        required>
+                </div>
+                <div class="form-item">
+                    <label for="wage">Salario</label>
+                    <input type="number" name="wage" id="wage" placeholder="Ex: 1000,00" required>
+                </div>
+                <div class="button-blue" id="add">ADD</div>
+            </form>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <table class="table table-light table-striped" id="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Salario</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function showModal(){      
+            let el = document.getElementById("modal");
+            let modal = new bootstrap.Modal(el);
+            modal.show();
+        }
+    </script>
+</body>
+
+</html>
